@@ -8,7 +8,7 @@ Hi! Welcome to the PSL – Microeconomics II course's website :wave:
 
 :paperclip: [Syllabus](https://www.dropbox.com/s/oc33ix6g188kwft/Woo-Mora.%20Syllabus%20CORE%20Econ%20Macro%20PSL.pdf?dl=0).
 
-:loudspeaker: [Announcements](https://github.com/woomora/CORE-econ-macro/blob/master/announcements.md).
+:loudspeaker: [Announcements](https://github.com/woomora/psl-micro-II/blob/master/announcements.md).
 
 :clipboard: Slides below:
 
