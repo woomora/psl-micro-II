@@ -12,7 +12,7 @@ Hi! Welcome to the PSL – Microeconomics II course's website :wave:
 
 :clipboard: Slides below:
 
-- **Introduction**
+- **[Introduction](https://woomora.github.io/psl-micro-II/Intro/microII-intro.html#1)**
 - **Chapter 9: The Analysis of Competitive Markets**
 - **Chapter 10: Market Power: Monopoly and Monopsony**
 - **Chapter 11: Pricing with Market Power**
