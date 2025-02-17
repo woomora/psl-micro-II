@@ -287,9 +287,9 @@ Will try to have a short break (10 min.) per class if time allows.
 
 ## Grading
 
-1. Final exam 70%
-2. TD and surprise quizzes 15%
-3. Paper summary 15%
+1. Midterm exam 40%
+2. Final exam 40%
+3. TD and surprise quizzes 15%
 
 --
 
