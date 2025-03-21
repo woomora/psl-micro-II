@@ -609,6 +609,7 @@ plot_supply_demand(plot_data, show_supply = FALSE) +
 ```
 
 $$\sum_i WTP_i - P \quad \forall \; WTP_i \geq P$$
+
 ---
 ## Consumer and Producer Surplus 
 
@@ -1337,6 +1338,7 @@ plot_delta_ps
 ```
 
 $$\Delta PS = - \textit{Lost #1} - \textit{Lost #2}$$
+
 ---
 ## Welfare: Example - Price controls
 

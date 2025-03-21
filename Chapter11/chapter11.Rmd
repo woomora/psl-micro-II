@@ -93,7 +93,7 @@ knitr::include_graphics("https://res.cloudinary.com/shotgun/image/upload/v173462
 
 .pull-right[
 ```{r, out.width="70%"}
-knitr::include_graphics("rock-en-seine-2025.png")
+knitr::include_graphics("imgs/rock-en-seine-2025.png")
 ```
 ]
 
@@ -115,14 +115,14 @@ knitr::include_graphics("https://i.ytimg.com/vi/q_YFIY4L0EI/maxresdefault.jpg")
 ## Introduction 
 
 ```{r, out.width="85%"}
-knitr::include_graphics("billets-we-love-green.png")
+knitr::include_graphics("imgs/billets-we-love-green.png")
 ```
 
 ---
 ## Introduction 
 
 ```{r, out.width="85%"}
-knitr::include_graphics("billets-rock-en-seine.png")
+knitr::include_graphics("imgs/billets-rock-en-seine.png")
 ```
 
 ---
@@ -1543,7 +1543,7 @@ $$\frac{P_1}{P_2} = \frac{1 + \frac{1}{\varepsilon_{d2}}}{1 + \frac{1}{\varepsil
 It may not pay to sell to both groups of consumers if marginal cost is rising and one group is not willing to pay much for the product.
 
 ```{r 3rd-d-price-disc14, out.width="60%"}
-knitr::include_graphics("figure11.6.png")
+knitr::include_graphics("imgs/figure11.6.png")
 ```
 
 
@@ -2099,7 +2099,7 @@ Now suppose that there are two groups of consumers. The firm, however, can set o
 If the usage fee, $P$, equals MC. Thus, $T$ would be the consumer surplus of the first group of consumers: if the firms charge a higher $T$, they loose $D_1$
 
 ```{r 2p-tariff-06, out.width="40%"}
-knitr::include_graphics("figure11.10.png")
+knitr::include_graphics("imgs/figure11.10.png")
 ```
 
 --
@@ -2320,7 +2320,7 @@ When serving two classes of customers, the club owner maximizes profits by:
 
 .pull-right[
 ```{r}
-knitr::include_graphics("figure11.10.png")
+knitr::include_graphics("imgs/figure11.10.png")
 ```
 ]
 
