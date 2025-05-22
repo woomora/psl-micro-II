@@ -17,4 +17,4 @@ Hi! Welcome to the PSL – Microeconomics II course's website :wave:
 - **[Chapter 10: Market Power: Monopoly and Monopsony](https://woomora.github.io/psl-micro-II/Chapter10/chapter10.html#1)** [[pdf](https://woomora.github.io/psl-micro-II/Chapter10/chapter10.pdf)]
 - **[Chapter 11: Pricing with Market Power](https://woomora.github.io/psl-micro-II/Chapter11/chapter11.html#1)** [[pdf](https://woomora.github.io/psl-micro-II/Chapter11/chapter11.pdf)]
 - **[Chapter 12: Monopolistic Competition and Oligopoly](https://woomora.github.io/psl-micro-II/Chapter12/chapter12.html#1)** [[pdf](https://woomora.github.io/psl-micro-II/Chapter12/chapter12.pdf)]
-- **[Chapter 16: General Equilibrium and Economic Efficiency](https://woomora.github.io/psl-micro-II/Chapter16/chapter16.html#1)** [[pdf](https://woomora.github.io/psl-micro-II/Chapter16/chapter16.pdf)]**
+- **[Chapter 16: General Equilibrium and Economic Efficiency](https://woomora.github.io/psl-micro-II/Chapter16/chapter16.html#1)** [[pdf](https://woomora.github.io/psl-micro-II/Chapter16/chapter16.pdf)]
