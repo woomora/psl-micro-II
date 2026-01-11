@@ -6,7 +6,7 @@ Hi! Welcome to the PSL – Microeconomics II course's website :wave:
 
 :calendar: [Google calendar with course's dates](https://calendar.google.com/calendar/embed?src=83c4ec7304addcd3734c0b6ff8fcc6c65a95461067146a2351a2f3f3302a1c8e%40group.calendar.google.com&ctz=Europe%2FParis).
 
-:paperclip: [Syllabus](https://woomora.github.io/psl-micro-II//PSL%202025%20Spring%20%E2%80%93%20Micro%20II.pdf).
+:paperclip: [Syllabus](https://woomora.github.io/psl-micro-II//PSL%202026%20Spring%20%E2%80%93%20Micro%20II.pdf).
 
 :loudspeaker: [Announcements](https://github.com/woomora/psl-micro-II/blob/master/announcements.md).
 
