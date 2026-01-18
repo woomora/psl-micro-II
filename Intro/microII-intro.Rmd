@@ -2,7 +2,7 @@
 title: "Microeconomics II"
 subtitle: "Paris Sciences et Lettres"
 author: "Guillermo Woo-Mora"
-date: "Spring 2025"
+date: "Spring 2026"
 output: 
   xaringan::moon_reader:
     lib_dir: libs
@@ -68,7 +68,6 @@ xaringanExtra::style_share_again(
 # scale_colour_discrete <- partial(scale_colour_nhs, discrete = TRUE)
 ```
 
----
 .center2[
 # Welcome
 ]
@@ -76,124 +75,14 @@ xaringanExtra::style_share_again(
 ---
 # Presentation 
 
---
-
-.pull-left[
 - Guillermo (Billy) Woo-Mora
 - From Mexico 🇲🇽
-- 4th year PhD candidate at PSE
+- 5th year PhD candidate at PSE
 - 📧 guillermo.woo-mora@psemail.eu
 - Research interests:
   - Political economy of development
   - Historical economics
   - Social/Cultural economics
-]
-
---
-
-.pull-right[
-- *Durable or persistent inequalities*:
-
-Long-term impacts of segregation policies
-
-```{r, out.width="80%"}
-knitr::include_graphics("imgs/IoR1.png")
-```
-
-]
-
----
-# Presentation 
-
-.pull-left[
-- Guillermo (Billy) Woo-Mora
-- From Mexico 🇲🇽
-- 4th year PhD candidate at PSE
-- 📧 guillermo.woo-mora@psemail.eu
-- Research interests:
-  - Political economy of development
-  - Historical economics
-  - Social/Cultural economics
-]
-
-.pull-right[
-- *Durable or persistent inequalities*:
-
-Long-term impacts of segregation policies
-
-```{r, out.width="90%"}
-knitr::include_graphics("imgs/IoR2.png")
-```
-
-]
-
----
-# Presentation 
-
-.pull-left[
-- Guillermo (Billy) Woo-Mora
-- From Mexico 🇲🇽
-- 4th year PhD candidate at PSE
-- 📧 guillermo.woo-mora@psemail.eu
-- Research interests:
-  - Political economy of development
-  - Historical economics
-  - Social/Cultural economics
-]
-
-.pull-right[
-- *Durable or persistent inequalities*:
-
-Between-group (skin tone) disparities and discrimination 
-```{r, out.width="90%"}
-knitr::include_graphics("imgs/UCR.png")
-```
-
-]
-
----
-# Presentation 
-
-.pull-left[
-- Guillermo (Billy) Woo-Mora
-- From Mexico 🇲🇽
-- 4th year PhD candidate at PSE
-- 📧 guillermo.woo-mora@psemail.eu
-- Research interests:
-  - Political economy of development
-  - Historical economics
-  - Social/Cultural economics
-]
-
-.pull-right[
-- *Populism: origins and consequences*:
-
-Populist policies and populist leaders economic effects
-```{r, out.width="90%"}
-knitr::include_graphics("imgs/POS.png")
-```
-
-]
-
----
-# Presentation 
-
-.pull-left[
-- Guillermo (Billy) Woo-Mora
-- From Mexico 🇲🇽
-- 4th year PhD candidate at PSE
-- 📧 guillermo.woo-mora@psemail.eu
-- Research interests:
-  - Political economy of development
-  - Historical economics
-  - Social/Cultural economics
-- A funny story or a interesting fact...
-]
-
---
-.center[
-### Now, your turn 😃
-]
 
 ---
 # Microeconomics
@@ -271,13 +160,13 @@ Decision-making of **consumers** and **producers** and the determination of **pr
 
 Approx. two classes per chapter, with 45-60 minutes per chapter to solve exercises.
 
-Will try to have a short break (10 min.) per class if time allows.
+Will try to have a short break (10-15 min.) per class if time allows.
 
 --
 
-📆 [Google calendar with course's dates](https://calendar.google.com/calendar/u/0?cid=MTIxNjNhYWM4OTIxYzIzMjU1NDBiNTIxNmIzMjVmOTkxOTAzMzJmZDFlNTk4M2IwY2JlOTRjYTU0NTUzZDU4ZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
+📆 [Google calendar with course's dates](https://calendar.google.com/calendar/u/0/embed?src=83c4ec7304addcd3734c0b6ff8fcc6c65a95461067146a2351a2f3f3302a1c8e@group.calendar.google.com&ctz=Europe/Paris)
 
-📄 [Syllabus with content by date](https://github.com/woomora/psl-micro-II/blob/2df329b771c0b37b702cebb2a46cf7d4dd5b64c4/PSL%202025%20Spring%20%E2%80%93%20Micro%20II.pdf)
+📄 [Syllabus with content by date](https://woomora.github.io/psl-micro-II//PSL%202026%20Spring%20%E2%80%93%20Micro%20II.pdf)
 
 ---
 
@@ -289,7 +178,7 @@ Will try to have a short break (10 min.) per class if time allows.
 
 1. Midterm exam 40%
 2. Final exam 40%
-3. TD and surprise quizzes 15%
+3. TD and surprise quizzes 20%
 
 --
 
