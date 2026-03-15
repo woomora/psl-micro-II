@@ -178,7 +178,7 @@ plot_monopoly <- function(
       annotate(
         "text",
         x = eq_Q_monopoly, y = 0,  
-        label = bquote(Q^"*" == .(eq_Q_rounded)),  # Using bquote for dynamic value
+        label = paste0("Q* = ", eq_Q_rounded),
         fontface = "italic", size = 3, hjust = -0.35
       )
   }
@@ -190,7 +190,7 @@ plot_monopoly <- function(
       annotate(
         "text",  
         x = 0, y = eq_P_monopoly,  
-        label = bquote(P^"*" == .(eq_P_rounded)),  # Using bquote for dynamic value
+        label = paste0("P* = ", eq_P_rounded),
         fontface = "italic", size = 3, vjust = -.75  # Adjust size and alignment
       )
   }

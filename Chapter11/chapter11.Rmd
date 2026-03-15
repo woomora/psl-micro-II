@@ -5,7 +5,7 @@ subtitle: |
 author: "Guillermo Woo-Mora"
 date: | 
  | Paris Sciences et Lettres
- | Spring 2025
+ | Spring 2026
 output: 
   xaringan::moon_reader:
     lib_dir: libs
@@ -45,7 +45,6 @@ library(plotly)
 library(googlesheets4)
 library(dplyr)
 library(knitr)
-library(rtweet)
 
 # set default options
 opts_chunk$set(
@@ -87,13 +86,13 @@ source("chapter11_plots.R")
 
 .pull-left[
 ```{r, out.width="65%"}
-knitr::include_graphics("https://res.cloudinary.com/shotgun/image/upload/v1734627385/production/artworks/WLG25_Shotgun_2-3_io20dt.png")
+knitr::include_graphics("http://storage.googleapis.com/passculture-metier-prod-production-assets-fine-grained/thumbs/mediations/4PAMS")
 ```
 ]
 
 .pull-right[
 ```{r, out.width="70%"}
-knitr::include_graphics("imgs/rock-en-seine-2025.png")
+knitr::include_graphics("https://radical-production.fr/uploads/divers/res2026-annonce1-lineup-meta-1080x1440.jpg")
 ```
 ]
 
@@ -124,6 +123,21 @@ knitr::include_graphics("imgs/billets-we-love-green.png")
 ```{r, out.width="85%"}
 knitr::include_graphics("imgs/billets-rock-en-seine.png")
 ```
+
+---
+## Introduction 
+
+```{r, out.width="40%"}
+knitr::include_graphics("https://www.parisladefense-arena.com/uploads/2025/05/visu-date-2-819x1024.jpg")
+```
+
+---
+## Introduction 
+
+```{r, out.width="85%"}
+knitr::include_graphics("imgs/billets-bad-bunny.png")
+```
+
 
 ---
 .center2[
@@ -666,7 +680,7 @@ plot_capturing_cs +
   annotate(
     "text",
     x = imperfect_pd$q[1], y = imperfect_pd$p[1],  
-    label = bquote(P[1]),  # Using bquote for dynamic value
+    label = expression(P[1]),  # Using expression for dynamic value
     fontface = "italic", size = 3, hjust = -0.85
   )
 
@@ -688,7 +702,7 @@ plot_imperfect_pd +
   annotate(
     "text",
     x = imperfect_pd$q[2], y = imperfect_pd$p[2],  
-    label = bquote(P[2]),  # Using bquote for dynamic value
+    label = expression(P[2]),  # Using expression for dynamic value
     fontface = "italic", size = 3, hjust = -0.85
   )
 
@@ -710,7 +724,7 @@ plot_imperfect_pd +
   annotate(
     "text",
     x = imperfect_pd$q[3], y = imperfect_pd$p[3],  
-    label = bquote(P[3]),  # Using bquote for dynamic value
+    label = expression(P[3]),  # Using expression for dynamic value
     fontface = "italic", size = 3, hjust = -0.85
   )
 
@@ -732,7 +746,7 @@ plot_imperfect_pd +
   annotate(
     "text",
     x = imperfect_pd$q[4], y = imperfect_pd$p[4],  
-    label = bquote(P[4]),  # Using bquote for dynamic value
+    label = expression(P[4]),  # Using expression for dynamic value
     fontface = "italic", size = 3, hjust = -0.85
   )
 
@@ -754,7 +768,7 @@ plot_imperfect_pd +
   annotate(
     "text",
     x = imperfect_pd$q[5], y = imperfect_pd$p[5],  
-    label = bquote(P[5]),  # Using bquote for dynamic value
+    label = expression(P[5]),  # Using expression for dynamic value
     fontface = "italic", size = 3, hjust = -0.85
   )
 
@@ -776,7 +790,7 @@ plot_imperfect_pd +
   annotate(
     "text",
     x = imperfect_pd$q[6], y = imperfect_pd$p[6],  
-    label = bquote(P[6]),  # Using bquote for dynamic value
+    label = expression(P[6]),  # Using expression for dynamic value
     fontface = "italic", size = 3, hjust = -0.85
   )
 
@@ -913,7 +927,7 @@ plot_2nd_pd <-
   annotate(
     "text",  
     x = block, y = 40 - 3.6*block,  
-    label =  bquote(P["1st block"]), 
+    label =  expression(P["1st block"]), 
     fontface = "italic", size = 3, hjust = -.35, vjust = -.1  # Adjust size and alignment
   )
 
@@ -955,7 +969,7 @@ plot_2nd_pd <-
   annotate(
     "text",  
     x = block2, y = 40 - 3.6*block2,  
-    label =  bquote(P["2nd block"]), 
+    label =  expression(P["2nd block"]), 
     fontface = "italic", size = 3, hjust = -.35, vjust = -.1  # Adjust size and alignment
   )
     
@@ -995,7 +1009,7 @@ plot_2nd_pd <-
   annotate(
     "text",  
     x = block3, y = 40 - 3.6*block3,  
-    label =  bquote(P["3rd block"]), 
+    label =  expression(P["3rd block"]), 
     fontface = "italic", size = 3, hjust = -.35, vjust = -.1  # Adjust size and alignment
   )
     
@@ -1202,7 +1216,7 @@ plot_3rd_pd +
   # Demand Group 1
   geom_line(data = plot_data, aes(x = q, y = d1), color = blue_chapter, size = 1.2) +
   annotate(
-    "text", label = bquote(D["1"]),
+    "text", label = expression(D["1"]),
     x = 40, y = 13,
     color = blue_chapter, fontface = "italic", size = 3.5, hjust = -0.25
   ) 
@@ -1229,7 +1243,7 @@ plot_3rd_pd <-
   # Demand Group 2
   geom_line(data = plot_data, aes(x = q, y = d2), color = turquoise_chapter, size = 1.2) +
   annotate(
-    "text", label = bquote(D["2"]),
+    "text", label = expression(D["2"]),
     x = 20, y = 3,
     color = turquoise_chapter, fontface = "italic", size = 3.5, hjust = -0.25
   ) 
@@ -1256,14 +1270,14 @@ plot_3rd_pd +
   # Marginal revenues Group 1
   geom_line(data = plot_data, aes(x = q, y = mr1), color = blue_chapter, size = 1.2, alpha = .5, linetype = "dashed") +
   annotate(
-    "text", label = bquote(MR["1"]),
+    "text", label = expression(MR["1"]),
     x = 26, y = 3,
     color = blue_chapter, fontface = "italic", size = 3.5, hjust = -0.25
   ) +
   # Marginal revenues Group 2
   geom_line(data = plot_data, aes(x = q, y = mr2), color = turquoise_chapter, size = 1.2, alpha = .5, linetype = "dashed") +
   annotate(
-    "text", label = bquote(MR["2"]),
+    "text", label = expression(MR["2"]),
     x = 10, y = 3,
     color = turquoise_chapter, fontface = "italic", size = 3.5, hjust = -0.25
   ) 
@@ -1294,7 +1308,7 @@ plot_3rd_pd <- plot_3rd_pd +
   # Marginal revenues T
   geom_line(data = plot_data, aes(x = q, y = mrt), color = purple_chapter, size = 1.2, alpha = .5) +
   annotate(
-    "text", label = bquote(MR["T"]),
+    "text", label = expression(MR["T"]),
     x = 36, y = 3,
     color = purple_chapter, fontface = "italic", size = 3.5, hjust = -0.25
   ) 
@@ -1326,7 +1340,7 @@ plot_3rd_pd <- plot_3rd_pd +
   annotate(
     "text",
     x = eq_q, y = 0,  
-    label = bquote(Q["T"] == .(eq_q)),  # Using bquote for dynamic value
+    label = expression(Q["T"] == .(eq_q)),  # Using expression for dynamic value
     fontface = "italic", size = 2.4, hjust = -0.15
   )
 
@@ -1366,7 +1380,7 @@ plot_3rd_pd <- plot_3rd_pd +
   annotate(
     "text",
     x = eq_q1, y = 0,  
-    label = bquote(Q["1"] == .(eq_q1)),  # Using bquote for dynamic value
+    label = expression(Q["1"] == .(eq_q1)),  # Using expression for dynamic value
     fontface = "italic", size = 2.4, hjust = -0.15
   )
 
@@ -1392,7 +1406,7 @@ plot_3rd_pd <- plot_3rd_pd +
   annotate(
     "text",
     x = eq_q2, y = 0,  
-    label = bquote(Q["2"] == .(eq_q2)),  # Using bquote for dynamic value
+    label = expression(Q["2"] == .(eq_q2)),  # Using expression for dynamic value
     fontface = "italic", size = 2.4, hjust = -0.15
   )
 
@@ -1419,7 +1433,7 @@ plot_3rd_pd <- plot_3rd_pd +
   annotate(
     "text",  
     x = 0, y = eq_p1,  
-    label = bquote(P["1"] == .(eq_p1)),  # Using bquote for dynamic value
+    label = expression(P["1"] == .(eq_p1)),  # Using expression for dynamic value
     fontface = "italic", size = 2.5, vjust = -.75  # Adjust size and alignment
   )
 
@@ -1446,7 +1460,7 @@ plot_3rd_pd <- plot_3rd_pd +
   annotate(
     "text",  
     x = 0, y = eq_p2,  
-    label = bquote(P["2"] == .(eq_p2)),  # Using bquote for dynamic value
+    label = expression(P["2"] == .(eq_p2)),  # Using expression for dynamic value
     fontface = "italic", size = 2.5, vjust = -.75  # Adjust size and alignment
   )
 
@@ -1492,50 +1506,38 @@ $$\frac{P_1}{P_2} = \frac{1 + \frac{1}{\varepsilon_{d2}}}{1 + \frac{1}{\varepsil
 
 ---
 ## Third-Degree Price Discrimination
-
 Recall $\varepsilon_d = \frac{\Delta Q}{ \Delta P} \cdot \frac{P}{ Q}$. Thus, in our example, with $P_1 = 29.7$ and $P_2=39.6$:
 
 .pull-left[
 $$P_1=40-0.75 \cdot Q_1$$
 ]
-
 .pull-right[
 $$P_2=60-3 \cdot Q_2$$
 ]
-
 --
-
 .pull-left[
 $$\Rightarrow \; \Delta P_1= -0.75 \cdot \Delta Q_1$$
 ]
-
 .pull-right[
-$$\Rightarrow \; \Delta P_2= - 3 \cdot \Rightarrow \; \Delta  Q_2$$
+$$\Rightarrow \; \Delta P_2= -3 \cdot \Delta Q_2$$
 ]
-
 --
-
 .pull-left[
 $$\iff \; \frac{\Delta P_1}{\Delta Q_1}= - 0.75$$
 ]
-
 .pull-right[
 $$\iff \; \frac{\Delta P_2}{ \Delta Q_2}= - 3$$
 ]
-
 --
-
 .pull-left[
-$$\Rightarrow \; \frac{1}{ \varepsilon_{d1}}= - 0.75 \cdot \frac{29.7}{13.7} \approx -0.35$$
+$$\Rightarrow \; \frac{1}{ \varepsilon_{d1}}= - 0.75 \cdot \frac{13.7}{29.7} \approx -0.346$$
 ]
-
 .pull-right[
-$$\Rightarrow \; \frac{1}{ \varepsilon_{d2}}= - 3 \cdot \frac{39.6}{6.8} \approx -0.515$$
+$$\Rightarrow \; \frac{1}{ \varepsilon_{d2}}= - 3 \cdot \frac{6.8}{39.6} \approx -0.515$$
 ]
-
 --
 
-$$\frac{P_1}{P_2} = \frac{1 + \frac{1}{\varepsilon_{d2}}}{1 + \frac{1}{\varepsilon_{d1}}} \; \Rightarrow  \; \frac{1-0.515}{1-0.35} \approx 0.75$$
+$$\frac{P_1}{P_2} = \frac{1 + \frac{1}{\varepsilon_{d2}}}{1 + \frac{1}{\varepsilon_{d1}}} \; \Rightarrow  \; \frac{1-0.515}{1-0.346} \approx 0.75$$
 
 ---
 ## Third-Degree Price Discrimination
@@ -1617,14 +1619,14 @@ plot_intmp_price <-
   # Demand Group 1
   geom_line(data = plot_data, aes(x = q, y = d1), color = blue_chapter, size = 1.2) +
   annotate(
-    "text", label = bquote(D["1"]),
+    "text", label = expression(D["1"]),
     x = 20.5, y = 1.5,
     color = blue_chapter, fontface = "italic", size = 3.5, hjust = -0.25
   ) +
   # Marginal revenues Group 1
   geom_line(data = plot_data, aes(x = q, y = mr1), color = blue_chapter, size = 1.2, alpha = .5, linetype = "dashed") +
   annotate(
-    "text", label = bquote(MR["1"]),
+    "text", label = expression(MR["1"]),
     x = 10.5, y = 1.5,
     color = blue_chapter, fontface = "italic", size = 3.5, hjust = -0.25
   )
@@ -1654,14 +1656,14 @@ plot_intmp_price <-
   annotate(
     "text",
     x = eq_q1, y = 0,  
-    label = bquote(Q["1"] == .(eq_q1)),  # Using bquote for dynamic value
+    label = expression(Q["1"] == .(eq_q1)),  # Using expression for dynamic value
     fontface = "italic", size = 2.4, hjust = -0.15
   ) +
   geom_segment(aes(x = 0, xend = eq_q1, y = eq_p1, yend = eq_p1), linetype = "dashed", color = "gray50") +
   annotate(
     "text",
     x = 0, y = eq_p1,  
-    label = bquote(P["1"] == .(eq_p1)),  # Using bquote for dynamic value
+    label = expression(P["1"] == .(eq_p1)),  # Using expression for dynamic value
     fontface = "italic", size = 2.4, vjust = -0.15
   ) +
   geom_point(
@@ -1682,14 +1684,14 @@ plot_intmp_price <-
   # Demand Group 2
   geom_line(data = plot_data, aes(x = q, y = d2), color = turquoise_chapter, size = 1.2) +
   annotate(
-    "text", label = bquote(D["2"]),
+    "text", label = expression(D["2"]),
     x = 37, y = 19,
     color = turquoise_chapter, fontface = "italic", size = 3.5, hjust = -0.25
   ) +
   # Marginal revenues Group 1
   geom_line(data = plot_data, aes(x = q, y = mr2), color = turquoise_chapter, size = 1.2, alpha = .5, linetype = "dashed") +
   annotate(
-    "text", label = bquote(MR["2"]),
+    "text", label = expression(MR["2"]),
     x = 34.5, y = 1.5,
     color = turquoise_chapter, fontface = "italic", size = 3.5, hjust = -0.25
   )
@@ -1717,14 +1719,14 @@ plot_intmp_price <-
   annotate(
     "text",
     x = eq_q2, y = 0,  
-    label = bquote(Q["1"] == .(eq_q2)),  # Using bquote for dynamic value
+    label = expression(Q["1"] == .(eq_q2)),  # Using expression for dynamic value
     fontface = "italic", size = 2.4, hjust = -0.15
   ) +
   geom_segment(aes(x = 0, xend = eq_q2, y = eq_p2, yend = eq_p2), linetype = "dashed", color = "gray50") +
   annotate(
     "text",
     x = 0, y = eq_p2,  
-    label = bquote(P["1"] == .(eq_p2)),  # Using bquote for dynamic value
+    label = expression(P["1"] == .(eq_p2)),  # Using expression for dynamic value
     fontface = "italic", size = 2.4, vjust = -0.15
   ) +
   geom_point(
@@ -1802,14 +1804,14 @@ plot_peakloadp <-
   # Demand Group 1
   geom_line(data = plot_data, aes(x = q, y = d1), color = blue_chapter, size = 1.2) +
   annotate(
-    "text", label = bquote(D["1"]),
+    "text", label = expression(D["1"]),
     x = 32.5, y = 1.5,
     color = blue_chapter, fontface = "italic", size = 3.5, hjust = -0.25
   ) +
   # Marginal revenues Group 1
   geom_line(data = plot_data, aes(x = q, y = mr1), color = blue_chapter, size = 1.2, alpha = .5, linetype = "dashed") +
   annotate(
-    "text", label = bquote(MR["1"]),
+    "text", label = expression(MR["1"]),
     x = 16, y = 1.5,
     color = blue_chapter, fontface = "italic", size = 3.5, hjust = -0.25
   )
@@ -1837,14 +1839,14 @@ plot_peakloadp <-
   annotate(
     "text",
     x = eq_q1, y = 0,  
-    label = bquote(Q["1"] == .(eq_q1)),  # Using bquote for dynamic value
+    label = expression(Q["1"] == .(eq_q1)),  # Using expression for dynamic value
     fontface = "italic", size = 2.4, hjust = -0.15
   ) +
   geom_segment(aes(x = 0, xend = eq_q1, y = eq_p1, yend = eq_p1), linetype = "dashed", color = "gray50") +
   annotate(
     "text",
     x = 0, y = eq_p1,  
-    label = bquote(P["1"] == .(eq_p1)),  # Using bquote for dynamic value
+    label = expression(P["1"] == .(eq_p1)),  # Using expression for dynamic value
     fontface = "italic", size = 2.4, vjust = -0.15
   ) +
   geom_point(
@@ -1866,14 +1868,14 @@ plot_peakloadp <-
   # Demand Group 2
   geom_line(data = plot_data, aes(x = q, y = d2), color = turquoise_chapter, size = 1.2) +
   annotate(
-    "text", label = bquote(D["2"]),
+    "text", label = expression(D["2"]),
     x = 37, y = 19,
     color = turquoise_chapter, fontface = "italic", size = 3.5, hjust = -0.25
   ) +
   # Marginal revenues Group 1
   geom_line(data = plot_data, aes(x = q, y = mr2), color = turquoise_chapter, size = 1.2, alpha = .5, linetype = "dashed") +
   annotate(
-    "text", label = bquote(MR["2"]),
+    "text", label = expression(MR["2"]),
     x = 27.5, y = 1.5,
     color = turquoise_chapter, fontface = "italic", size = 3.5, hjust = -0.25
   )
@@ -1901,14 +1903,14 @@ plot_peakloadp <-
   annotate(
     "text",
     x = eq_q2, y = 0,  
-    label = bquote(Q["1"] == .(eq_q2)),  # Using bquote for dynamic value
+    label = expression(Q["1"] == .(eq_q2)),  # Using expression for dynamic value
     fontface = "italic", size = 2.4, hjust = -0.15
   ) +
   geom_segment(aes(x = 0, xend = eq_q2, y = eq_p2, yend = eq_p2), linetype = "dashed", color = "gray50") +
   annotate(
     "text",
     x = 0, y = eq_p2,  
-    label = bquote(P["1"] == .(eq_p2)),  # Using bquote for dynamic value
+    label = expression(P["1"] == .(eq_p2)),  # Using expression for dynamic value
     fontface = "italic", size = 2.4, vjust = -0.15
   ) +
   geom_point(
@@ -2006,7 +2008,7 @@ plot_2p_tariff <-
   # Demand Group 1
   geom_line(data = plot_data, aes(x = q, y = d1), color = blue_chapter, size = 1.2) +
   annotate(
-    "text", label = bquote(D["1"]),
+    "text", label = expression(D["1"]),
     x = 20.5, y = 1.5,
     color = blue_chapter, fontface = "italic", size = 3.5, hjust = -0.25
   ) 
@@ -2056,7 +2058,7 @@ plot_2p_tariff <-
   annotate(
     "text",
     x = 20, y = 22,  
-    label = bquote(P^"*" == MC),  # Using bquote
+    label = expression(P^"*" == MC),  # Using expression
     fontface = "italic", size = 3, hjust = -0.15
   )
 
@@ -2081,7 +2083,7 @@ plot_2p_tariff <-
   annotate(
     "text",
     x = mean(cs$x), y = mean(cs$y),  
-    label = "T",  # Using bquote
+    label = "T",  # Using expression
     fontface = "italic", size = 3, hjust = -0.15
   )
 
@@ -2225,14 +2227,14 @@ plot_2p_tariff_example <-
   # Demand Group 1
   geom_line(data = plot_data, aes(x = q, y = d1), color = blue_chapter, size = 1.2) +
   annotate(
-    "text", label = bquote(D["1"]),
+    "text", label = expression(D["1"]),
     x = 10.25, y = 0.5,
     color = blue_chapter, fontface = "italic", size = 3.5, hjust = -0.25
   ) +
   # # Demand Group 2
   # geom_line(data = plot_data, aes(x = q, y = d2), color = turquoise_chapter, size = 1.2) +
   # annotate(
-  #   "text", label = bquote(D["2"]),
+  #   "text", label = expression(D["2"]),
   #   x = 4.25, y = 0.5,
   #   color = turquoise_chapter, fontface = "italic", size = 3.5, hjust = -0.25
   # ) +
@@ -2255,7 +2257,7 @@ plot_2p_tariff_example +
   # MC
   geom_line(data = plot_data, aes(x = q, y = mc), color = red_chapter, size = 1.2) +
   annotate(
-    "text", label = bquote(MC),
+    "text", label = expression(MC),
     x = 0.25, y = 0.5,
     color = red_chapter, fontface = "italic", size = 3.5, hjust = -0.25
   )
@@ -2289,7 +2291,7 @@ cs <-
     annotate(
       "text",
       x = mean(cs$x), y = mean(cs$y),  
-      label = "T",  # Using bquote
+      label = "T",  # Using expression
       fontface = "italic", size = 3, hjust = -0.15
     )
 
@@ -2340,7 +2342,7 @@ plot_2p_tariff_example <-
   # Demand Group 2
     geom_line(data = plot_data, aes(x = q, y = d2), color = turquoise_chapter, size = 1.2) +
     annotate(
-      "text", label = bquote(D["2"]),
+      "text", label = expression(D["2"]),
       x = 4.25, y = 0.5,
       color = turquoise_chapter, fontface = "italic", size = 3.5, hjust = -0.25
     )
