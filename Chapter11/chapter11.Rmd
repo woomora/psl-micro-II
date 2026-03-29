@@ -1515,6 +1515,7 @@ $$P_1=40-0.75 \cdot Q_1$$
 $$P_2=60-3 \cdot Q_2$$
 ]
 --
+
 .pull-left[
 $$\Rightarrow \; \Delta P_1= -0.75 \cdot \Delta Q_1$$
 ]
@@ -1522,19 +1523,27 @@ $$\Rightarrow \; \Delta P_1= -0.75 \cdot \Delta Q_1$$
 $$\Rightarrow \; \Delta P_2= -3 \cdot \Delta Q_2$$
 ]
 --
+
 .pull-left[
 $$\iff \; \frac{\Delta P_1}{\Delta Q_1}= - 0.75$$
 ]
+
 .pull-right[
 $$\iff \; \frac{\Delta P_2}{ \Delta Q_2}= - 3$$
 ]
+
 --
+
 .pull-left[
+
 $$\Rightarrow \; \frac{1}{ \varepsilon_{d1}}= - 0.75 \cdot \frac{13.7}{29.7} \approx -0.346$$
 ]
+
 .pull-right[
+
 $$\Rightarrow \; \frac{1}{ \varepsilon_{d2}}= - 3 \cdot \frac{6.8}{39.6} \approx -0.515$$
 ]
+
 --
 
 $$\frac{P_1}{P_2} = \frac{1 + \frac{1}{\varepsilon_{d2}}}{1 + \frac{1}{\varepsilon_{d1}}} \; \Rightarrow  \; \frac{1-0.515}{1-0.346} \approx 0.75$$
@@ -2146,7 +2155,7 @@ $$Q_1 = 10 - P$$
 ]
 
 .pull-right[
-*Serious players*
+*Occasional players*
 $$Q_2 = 4 - 0.25 \cdot P$$
 ]
 
